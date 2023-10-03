@@ -4,7 +4,7 @@ namespace Encryption;
 
 public class EncryptionHelper
 {
-    public byte[] GenerateRandomKey(int sizeInBytes = 16)
+    public byte[] GenerateRandomKey(int sizeInBytes = 32)
     {
         using var rng = new RNGCryptoServiceProvider();
         var key = new byte[sizeInBytes];
